@@ -14,7 +14,12 @@
   </head>
 
   <body>
-   <div class="nav-class"><%= render 'shared/nav' %></div>
+
+
+
+    <div class="site-wrapper">
+   <div><%= render 'shared/nav' %></div>
+    <div class="container-fluid">
     <%= image_tag(
                     "background.jpg",
                     id: 'background',
@@ -26,5 +31,8 @@
                 %>
 
     <%= yield %>
+  </div>
+  </div>
+    <%= render 'shared/footer' %>
   </body>
 </html>
