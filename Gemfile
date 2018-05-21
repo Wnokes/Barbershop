@@ -30,3 +30,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails'
 gem 'friendly_id', '~> 5.2', '>= 5.2.4'
+
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'mini_magick', '~> 4.8'
