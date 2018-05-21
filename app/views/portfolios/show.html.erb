@@ -1,7 +1,15 @@
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col-md-5">
+      <%= image_tag(portfolio_img @portfolio.main_image, "main") %>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5 card">
+    <h1 class="center-text"><%= @portfolio.title %></h1>
+    <p class="top-margin"><%= @portfolio.description %></p>
+  </div>
 
 
-<%= @portfolio.title %>
 
-<%= @portfolio.description %>
-
-<%= image_tag(@portfolio.main_image) %>
+  </div>
+</div>

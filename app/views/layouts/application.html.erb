@@ -15,6 +15,16 @@
 
   <body>
    <div class="nav-class"><%= render 'shared/nav' %></div>
-   <%= yield %>
+    <%= image_tag(
+                    "background.jpg",
+                    id: 'background',
+                    autoplay: true,
+                    loop: true,
+                    muted: true,
+                    poster: 'background.jpg'
+                ) 
+                %>
+
+    <%= yield %>
   </body>
 </html>
