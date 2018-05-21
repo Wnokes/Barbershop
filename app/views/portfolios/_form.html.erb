@@ -1,0 +1,15 @@
+<%= form_for @portfolio do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+
+  <%= f.label :description, "Release Date" %>:
+  <%= f.text_field :description %><br />
+
+  <%= f.label :main_img %>:
+  <%= f.file_field :main_img %><br />
+
+  <%= f.label :thumbnail_img %>:
+  <%= f.file_field :thumbnail_img %><br />
+
+  <%= f.submit %>
+<% end %>
