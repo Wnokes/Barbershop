@@ -1,1 +1,14 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html,
+body {
+  height: 100%;
+  font-family: 'Lobster', monospace;
+}
+H3 {
+	display: inline;
+}
+html { margin-left: calc(100vw - 100%); }
+
+
