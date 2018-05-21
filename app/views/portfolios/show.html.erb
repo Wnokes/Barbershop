@@ -1,7 +1,10 @@
-
+<div class="container">
 
 <%= @portfolio.title %>
 
 <%= @portfolio.description %>
 
-<%= image_tag(@portfolio.main_image) %>
+<%= image_tag(portfolio_img @portfolio.main_image, "main") %>
+
+
+</div>
