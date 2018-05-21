@@ -33,3 +33,25 @@ html { margin-left: calc(100vw - 100%); }
 .top-margin {
   margin-top: 15px;
 }
+
+.footer {
+  vertical-align: bottom;
+  
+}
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 95%; /* For at least Firefox */
+  min-height: 95%;
+}
+
+#copyright-link {
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+
+#copyright-symbol {
+  font-size: 1.3em;
+}
