@@ -1,16 +1,17 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import "font-awesome";
 
 html,
 body {
   height: 100%;
   font-family: 'Lobster', monospace;
+  color: white;
 }
 H3 {
 	display: inline;
 }
-html { margin-left: calc(100vw - 100%); }
-
+html { overflow-y: scroll; }
 #background {
   position: fixed;
   top: 50%;
@@ -24,6 +25,30 @@ html { margin-left: calc(100vw - 100%); }
   transform: translateX(-50%) translateY(-50%);
   background: image-url('background.jpg') no-repeat;
   background-size: cover;
+
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	background-image: image-url('scrollbar.jpg');
+
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+	background-image: image-url('scrollbar.jpg');
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: grey;	
+	background-image: image-url('scrollbar.jpg');
+
+	
 }
 
 .center-text{
@@ -32,6 +57,20 @@ html { margin-left: calc(100vw - 100%); }
 
 .top-margin {
   margin-top: 15px;
+}
+
+.oval {
+  background: #474747;
+  border-radius: 50%;
+  padding: 25px;
+  margin: 25px;
+  -webkit-box-shadow: inset 0 0 10rem rgba(0,0,0,.5);
+ box-shadow: inset 0 0 10rem rgba(0,0,0,.5);
+}
+
+.card {
+	background-color: rgba(12,12,12,.5);
+	padding: 10px;
 }
 
 .footer {
