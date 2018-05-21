@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+	before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
+
 	def index
       @portfolios = Portfolio.all
 	end
@@ -8,7 +10,7 @@ class PortfoliosController < ApplicationController
 	end
 
 	def create
-	@portfolio = Portfolio.new(portfolio_params)
+		@portfolio = Portfolio.new(portfolio_params)
 	  if @portfolio.save
 	    redirect_to portfolio_path(@portfolio)
 	  else
@@ -48,7 +50,7 @@ class PortfoliosController < ApplicationController
     end
 
     def portfolio_params
-      params.require(:portfolio).permit(:title,  
+      params.require(:portfolio).permit(:title, 
                                         :description, 
                                         :main_image, 
                                         :thumbnail_image)
