@@ -16,13 +16,9 @@
 
   <body>
 
-    <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-
     <div class="site-wrapper">
    <div><%= render 'shared/nav' %></div>
     <div class="container-fluid">
-      <div>To whom it may concern: IDK if i threw the notices in right, I just did what devise said.  Do we have gritter? Do we want gritter?  Also, this is written in app.html</div>
     <%= image_tag(
                     "background.jpg",
                     id: 'background',
@@ -31,6 +27,8 @@
                 %>
 
     <%= yield %>
+    <%= alerts %>
+
   </div>
   </div>
     <%= render 'shared/footer' %>

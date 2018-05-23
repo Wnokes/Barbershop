@@ -11,7 +11,7 @@ module PagesHelper
 		str += "<div class='col-md-5'>#{link_to((fa_icon 'linkedin',text: 'LinkedIn'), @contact.linkedin, class: "social-link")}</div>" if strcheck @contact.linkedin
 
 		str += "</div>"	
-		str += link_to("Edit Contact and About", edit_contact_info_path(@contact))
+		str += link_to("Edit Contact and About", edit_contact_info_path(@contact)) if (logged_in?(:admin))
 		str += "</div>"
 
 		str.html_safe
