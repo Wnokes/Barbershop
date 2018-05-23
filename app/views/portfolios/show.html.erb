@@ -1,5 +1,9 @@
+<div class="row justify-content-md-center">
 
-  <div class="row justify-content-md-center">
+    <% if logged_in?(:admin) %> 
+        <%= link_to "New Portfolio", new_portfolio_path, class: "btn btn-outline-dark" %>
+    <% end %>
+
     <div class="col-md-5">
       <%= image_tag(portfolio_img @portfolio.main_image, "main") %>
     </div>

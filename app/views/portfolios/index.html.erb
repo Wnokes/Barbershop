@@ -1,7 +1,7 @@
 <div class=''>
 	<h1>Portfolios of Previous Work</h1>
 
-  <%= link_to "New Portfolio", new_portfolio_path, class: "btn btn-outline-dark" %>
+  <%= link_to "New Portfolio", new_portfolio_path, class: "btn btn-outline-dark" if logged_in?(:admin) %>
 
 </div>
 <div class="album text-muted">
