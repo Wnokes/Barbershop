@@ -86,10 +86,14 @@ html { overflow-y: scroll; }
   min-height: 95%;
 }
 
-#copyright-link {
+.copyright-link {
   font-weight: bold;
   font-style: italic;
   color: black;
+}
+
+.copyright-link:hover {
+  color: #e0e0e0;
 }
 
 #copyright-symbol {
@@ -116,4 +120,18 @@ html { overflow-y: scroll; }
 		position: absolute;
   		top: 50%;
   		transform: translateY(-50%);
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.btn {
+  background-color: rgba(12,12,12,.7);
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(215,215,215,.7);
+  color: black;
 }
