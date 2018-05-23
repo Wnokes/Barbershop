@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   font-family: 'Lobster', monospace;
-  color: white;
+  color: #e0e0e0;
 }
 H3 {
 	display: inline;
@@ -69,7 +69,7 @@ html { overflow-y: scroll; }
 }
 
 .card {
-	background-color: rgba(12,12,12,.5);
+	background-color: rgba(12,12,12,.7);
 	padding: 10px;
 }
 
@@ -93,4 +93,26 @@ html { overflow-y: scroll; }
 
 #copyright-symbol {
   font-size: 1.3em;
+}
+
+.contact {
+	margin: 10px;
+	font-size: 1.2em;
+}
+
+.social-link {
+	margin: 10px;
+	color: #e0e0e0;
+}
+
+.nav {
+	position: relative;
+}
+
+.nav-link {
+		color: #e0e0e0;
+		margin: 40 px;
+		position: absolute;
+  		top: 50%;
+  		transform: translateY(-50%);
 }

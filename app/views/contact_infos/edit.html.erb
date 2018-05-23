@@ -1,0 +1,28 @@
+<%= form_for @contact_info do |f| %>
+<div class="row">
+  <div class="col-md-4">
+    <div>
+    <%= f.text_field :phone, placeholder: 'Phone', class: "form-control" %><br />
+    </div>
+
+    <div>
+    <%= f.text_field :email, placeholder: 'Email', class: "form-control" %><br />
+    </div>
+
+    <div>
+    <%= f.text_field :facebook, placeholder: 'FaceBook', class: "form-control" %><br />
+    </div>
+    <div>
+    <%= f.text_field :scheduler, placeholder: 'Schedule', class: "form-control" %><br />
+    </div>
+  </div>
+
+  <div class="col-md-8">
+  <%= f.text_area :about_me, placeholder: 'About Me', class: "form-control", rows: 6 %><br />
+  </div>
+</div>
+
+<%= f.submit 'Submit', class: "btn btn-outline-dark" %>
+
+
+<% end %>
