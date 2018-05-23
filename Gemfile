@@ -36,3 +36,4 @@ gem 'carrierwave-aws', '~> 1.3'
 gem 'mini_magick', '~> 4.8'
 gem "font-awesome-rails"
 gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'petergate', '~> 1.8', '>= 1.8.1'
