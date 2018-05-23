@@ -35,3 +35,4 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'mini_magick', '~> 4.8'
 gem "font-awesome-rails"
+gem 'devise', '~> 4.4', '>= 4.4.3'
