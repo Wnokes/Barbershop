@@ -4,9 +4,7 @@
     <div class="row">
       <%= link_to "Edit Portfolio", edit_portfolio_path, class: "btn btn-outline-dark" %>
     </div>
-    <% end %>
     <div class="row">
-      <% if logged_in?(:admin) %> 
       <%= link_to "Delete", @portfolio, method: :delete, data:  {confirm: "Are you sure you want to delete?"},class: "btn btn-outline-dark" %>
     </div>
   </div>
