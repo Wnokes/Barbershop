@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC');
 @import "font-awesome";
 @import "gritter";
 
@@ -8,6 +9,7 @@ body {
   height: 100%;
   font-family: 'Lobster', monospace;
   color: #e0e0e0;
+  background-color: #231b1b;
 }
 H3 {
 	display: inline;
@@ -26,14 +28,18 @@ html { overflow-y: scroll; }
   transform: translateX(-50%) translateY(-50%);
   background: image-url('background.jpg') no-repeat;
   background-size: cover;
+  background-position: center center;
 
 }
 
 ::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-	background-image: image-url('scrollbar.jpg');
+  background-color: #231b1b;
+  background-image: image-url('pole.png');
+  background-size: 100% ;
+
+
 
 }
 
@@ -41,15 +47,19 @@ html { overflow-y: scroll; }
 {
 	width: 10px;
 	background-color: #F5F5F5;
-	background-image: image-url('scrollbar.jpg');
+    background-color: #9e2222;
+  background-image: image-url('pole.png');
+  background-size: 100% ;
+
 }
 
 ::-webkit-scrollbar-thumb
 {
 	background-color: grey;	
-	background-image: image-url('scrollbar.jpg');
+    background-color: #9e2222;
+  background-image: image-url('pole.png');
+  background-size: 100% ;
 
-	
 }
 
 .center-text{
@@ -61,7 +71,7 @@ html { overflow-y: scroll; }
 }
 
 .oval {
-  background: #474747;
+  background: #9e2222;
   border-radius: 50%;
   padding: 25px;
   margin: 25px;
@@ -70,8 +80,9 @@ html { overflow-y: scroll; }
 }
 
 .card {
-	background-color: rgba(12,12,12,.7);
+	background-color: rgba(158, 34, 34,.7);
 	padding: 10px;
+  margin-top: 10px;
 }
 
 .footer {
@@ -86,19 +97,7 @@ html { overflow-y: scroll; }
   min-height: 95%;
 }
 
-.copyright-link {
-  font-weight: bold;
-  font-style: italic;
-  color: black;
-}
 
-.copyright-link:hover {
-  color: #e0e0e0;
-}
-
-#copyright-symbol {
-  font-size: 1.3em;
-}
 
 .contact {
 	margin: 10px;
@@ -123,6 +122,7 @@ html { overflow-y: scroll; }
 }
 .logo {
   font-size: 5em;
+}
 
 .nav-link:hover {
   color: black;
@@ -136,4 +136,42 @@ html { overflow-y: scroll; }
 .btn:hover {
   background-color: rgba(215,215,215,.7);
   color: black;
+}
+
+.title-font {
+      font-family: 'Lobster', monospace;
+}
+.body-font {
+  font-family: 'IM Fell French Canon SC', serif;
+}
+.subtitle {
+  font-size: .5em;
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #e0e0e0;
+  font-size: 1.3em;
+
+}
+
+.link:hover {
+    color: #594f4f;
+}
+
+.copyright-link {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+}
+
+#copyright-symbol {
+  font-size: 1.3em;
+}
+
+td{
+  font-size: 1.1em;
+    color: #e0e0e0;
+
 }

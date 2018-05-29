@@ -1,11 +1,28 @@
 <div class=''>
-	<h1>Portfolios of Previous Work</h1>
-
   <%= link_to "New Portfolio", new_portfolio_path, class: "btn btn-outline-dark" if logged_in?(:admin) %>
-
 </div>
 <div class="album text-muted">
   <div class="container">
+
+  	<div class="row justify-content-md-center">
+  		<div class="col-md-9 card body-font">
+  			<table>
+  				<tr>
+  				<td>Haircut $30</td>
+				<td>Shave $30</td>
+				<td>Beard trim $20</td>
+				<td>Beard beads $15</td>
+				</tr>
+				<tr>
+			<td>Scalp treatment $15</td>
+			<td>Color $60-$180</td>
+			<td>Geisha facial $30</td>
+			<td>Hair extensions $850 - $2000</td>
+			</tr>
+  			</table>
+  		</div>
+
+  	</div>
 
     <div class="row portfolio-item sortable">
       <%= render partial: 'portfolio_item', collection: @portfolios %>

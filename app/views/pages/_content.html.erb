@@ -1,16 +1,19 @@
 <div class="container">
-	<div class="row justify-content-md-center">
-		<div class="col-md-11 card contact"> 
-			<%= @contact.about_me %>
-		</div>
+	<div class='row justify-content-md-center'>
+		<div class='col-md-4 center-text card contact '>
+			<div class="center-text"><%= link_to('Book An Appointment', @contact.scheduler, class: 'center-text link body-font') %></div>
+		</div>    
 	</div>
 	<div class="row justify-content-md-center">
+		<div class="col-md-9 card contact body-font"> 
+			<%= markdown @contact.about_me %>
+		</div>
 		<%= contact_info_generator %>
 	</div>
-<div class='row justify-content-md-center'>
-        <div class='col-md-4 center-text card contact'>
-            <%= link_to('Scheduele An Appointment', @contact.scheduler, class: 'center-text nav-link') %>
-        </div>    
-    </div>
+	<div class="row justify-content-md-center body-font">
+		<div class="card ">
+			<div>Phone: <%= @contact.phone if strcheck @contact.phone %></div> 
+			<div>Email: <%= @contact.email if strcheck @contact.email %></div>
+		</div>
+	</div>
 </div>
-
