@@ -6,6 +6,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('WB-icon.ico'), :rel => 'icon', :type =>  'image/png' %>
+
 
     <style>
 		@import url('https://fonts.googleapis.com/css?family=Lobster');
@@ -19,7 +21,7 @@
     <div class="site-wrapper">
    <div><%= render 'shared/nav' %></div>
     <div class="container-fluid">
-    <%= image_tag(
+    <%#= image_tag(
                     "background.jpg",
                     id: 'background',
                     poster: 'background.jpg'

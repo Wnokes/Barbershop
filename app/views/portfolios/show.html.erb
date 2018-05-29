@@ -1,19 +1,26 @@
 <div class="row justify-content-md-center">
-
-    <% if logged_in?(:admin) %> 
-        <%= link_to "New Portfolio", new_portfolio_path, class: "btn btn-outline-dark" %>
-    <% end %>
-
-    <div class="col-md-5">
-      <%= image_tag(portfolio_img @portfolio.main_image, "main") %>
+  <% if logged_in?(:admin) %> 
+  <div class="col-md-1">
+    <div class="row">
+      <%= link_to "Edit Portfolio", edit_portfolio_path, class: "btn btn-outline-dark" %>
     </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-5 card">
+    <% end %>
+    <div class="row">
+      <% if logged_in?(:admin) %> 
+      <%= link_to "Delete", @portfolio, method: :delete, data:  {confirm: "Are you sure you want to delete?"},class: "btn btn-outline-dark" %>
+    </div>
+  </div>
+  <% end %>
+  <div class="col-md-5">
+    <%= image_tag(portfolio_img @portfolio.main_image, "main") %>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-5 card">
     <h1 class="center-text"><%= @portfolio.title %></h1>
-    <p class="top-margin"><%= @portfolio.description %></p>
+    <p class="top-margin body-font"><%= @portfolio.description %></p>
   </div>
 
 
 
-  </div>
+</div>
 
