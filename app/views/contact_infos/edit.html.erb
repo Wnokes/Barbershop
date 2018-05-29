@@ -1,6 +1,10 @@
 <%= form_for @contact_info do |f| %>
 <div class="row">
   <div class="col-md-4">
+    <div class="card body-font">
+        <%= markdown "Any Social Media or Contact Options That Are Left Blank Will Not Appear on The Home Page.
+        \nCopy and paste links from sources" %>
+    </div>
     <div>
     <%= f.text_field :phone, placeholder: 'Phone', class: "form-control" %><br />
     </div>
@@ -32,7 +36,7 @@
   </div>
 
   <div class="col-md-8">
-  <%= f.text_area :about_me, placeholder: 'About Me', class: "form-control", rows: 6 %><br />
+  <%= f.text_area :about_me, placeholder: 'About Me', class: "form-control body-font", rows: 6 %><br />
   </div>
 </div>
 
